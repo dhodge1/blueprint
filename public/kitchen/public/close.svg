@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="14.5" cy="14.5" r="14.5" fill="#000" fill-opacity=".37"/>
+        <g stroke="#FFF" stroke-linecap="round" stroke-width="1.4">
+            <path d="M7.35 1.47L7.35 13.23" transform="rotate(-45 19.45 2.55)"/>
+            <path d="M7.35 1.47L7.35 13.23" transform="rotate(-45 19.45 2.55) rotate(90 7.35 7.35)"/>
+        </g>
+    </g>
+</svg>

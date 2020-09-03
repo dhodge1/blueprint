@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="308" height="102" viewBox="0 0 308 102">
+    <defs>
+        <path id="prefix__a" d="M0.148 0.064L6.501 0.064 6.501 6.61 0.148 6.61z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(.317)">
+        <g transform="translate(38.683 22)">
+            <mask id="prefix__b" fill="#fff">
+                <use xlink:href="#prefix__a"/>
+            </mask>
+            <path fill="#5AE09C" d="M6.501 3.337c0 1.708-1.38 3.083-3.083 3.083C1.716 6.42.341 5.045.341 3.337.341 1.635 1.716.254 3.418.254s3.083 1.38 3.083 3.083" mask="url(#prefix__b)"/>
+        </g>
+        <circle cx="164.183" cy="65.5" r="2.5" fill="#32C5FF" transform="rotate(-10 164.183 65.5)"/>
+        <circle cx="3" cy="5.317" r="2" fill="#32C5FF" transform="rotate(-10 3 5.317)"/>
+        <path fill="#F9B65D" d="M84.683 90.502c0 1.379-1.119 2.498-2.5 2.498s-2.5-1.12-2.5-2.498c0-1.383 1.119-2.502 2.5-2.502s2.5 1.12 2.5 2.502"/>
+        <circle cx="302.579" cy="4.5" r="3.5" fill="#F9B65D" transform="rotate(-10 302.58 4.5)"/>
+        <circle cx="205.079" cy="98" r="3" fill="#F9B65D" transform="rotate(-10 205.08 98)"/>
+        <circle cx="121.683" cy="17" r="4" stroke="#F9B65D" stroke-width="3"/>
+        <circle cx="21.683" cy="73" r="5" stroke="#32C5FF" stroke-width="5"/>
+        <circle cx="261.183" cy="67.5" r="4.5" stroke="#32C5FF" stroke-width="4"/>
+        <rect width="5" height="17" x="225.683" y="17" fill="#5AE09C" rx="2.5" transform="rotate(90 228.183 25.5)"/>
+        <rect width="5" height="17" x="225.683" y="17" fill="#5AE09C" rx="2.5"/>
+    </g>
+</svg>

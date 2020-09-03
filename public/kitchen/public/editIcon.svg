@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="18px" viewBox="0 0 16 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Edit Icon</title>
+    <g id="Round-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="Web-Shopping-List_Category" transform="translate(-350.000000, -461.000000)" fill="#B3B3B3" stroke="#B3B3B3" stroke-width="1.32000003">
+            <g id="Group-20" transform="translate(89.000000, 380.000000)">
+                <g id="Edit-Icon" transform="translate(262.000000, 82.000000)">
+                    <polygon id="Path-4" transform="translate(5.744531, 9.184372) rotate(40.000000) translate(-5.744531, -9.184372) " points="4.29737507 2.16222119 7.03401013 2.20027284 7.19168665 13.5958096 5.85975601 16.2065231 4.45505159 13.557758"></polygon>
+                    <path d="M10.5698869,1.14121855 L11.6725512,1.15655059 C12.1147644,1.16269936 12.4717488,1.51970797 12.4778676,1.96192163 L12.5077322,4.12028502 L12.5077322,4.12028502 L9.77109713,4.08223337 L9.7418596,1.96918966 C9.73561876,1.51815426 10.096196,1.14745862 10.5472314,1.14121778 C10.5547829,1.14111329 10.5623354,1.14111355 10.5698869,1.14121855 Z" id="Rectangle" transform="translate(11.118987, 2.624914) rotate(40.000000) translate(-11.118987, -2.624914) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

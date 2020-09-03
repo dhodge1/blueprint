@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="26px" viewBox="0 0 25 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Empty Circle</title>
+    <g id="Round-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Web-Shopping-List_Category" transform="translate(-108.000000, -458.000000)" stroke="#FF626A" stroke-width="2">
+            <g id="Group-20" transform="translate(89.000000, 380.000000)">
+                <g id="Shopping-List-Item" transform="translate(20.000000, 79.000000)">
+                    <circle id="Empty-Circle" cx="11.5" cy="11.8125" r="11.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

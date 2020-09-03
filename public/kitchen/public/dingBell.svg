@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="113" height="112" viewBox="0 0 113 112">
+    <g fill="none" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width="3.8">
+        <path stroke-linecap="round" d="M97.498 64.657L107.295 64.657" transform="translate(2.384 3)"/>
+        <path stroke-linecap="round" d="M22.161 8.249L30.637 13.131" transform="translate(2.384 3) rotate(30 26.399 10.69)"/>
+        <path stroke-linecap="round" d="M92.685 82.58L101.17 87.468" transform="translate(2.384 3)"/>
+        <path stroke-linecap="round" d="M44.366 1L49.254 9.466" transform="translate(2.384 3) rotate(30 46.81 5.233)"/>
+        <path stroke-linecap="round" d="M79.536 95.7L84.435 104.166" transform="translate(2.384 3)"/>
+        <path stroke-linecap="round" d="M67.226 5.8L67.216 15.581" transform="translate(2.384 3) rotate(30 67.221 10.69)"/>
+        <path d="M.77 48.075l7.916 9.248c4.503-3.241 5.53-6.58 3.078-10.015-2.45-3.435-6.115-3.18-10.995.767z" transform="translate(2.384 3)"/>
+        <path stroke-linecap="round" d="M16.579 37.414L22.926 46.468" transform="translate(2.384 3) rotate(4 19.752 41.94)"/>
+        <path stroke-linecap="round" d="M34.502 43.841L27.356 33.374 40.868 38.601 34.117 27.843" transform="translate(2.384 3) rotate(18 34.112 35.842)"/>
+        <path stroke-linecap="round" d="M57.887 29.135c-.8-1.784-2.129-2.763-3.988-2.935-2.352-.218-5.091.933-6.022 5.66-1.738 8.822 7.08 9.338 8.888 6.797 1.206-1.694 1.528-3.388.965-5.082l-4.43.238" transform="translate(2.384 3)"/>
+        <path fill="#FBE190" d="M76.48 53.809c8.319-5.82 17.722-12.492 19.104-13.872 2.552-2.545 2.552-6.673 0-9.218-2.549-2.545-6.687-2.545-9.236 0-1.384 1.38-8.07 10.764-13.903 19.065l4.034 4.025z" transform="translate(2.384 3)"/>
+        <path fill="#FC3" d="M62.206 104.39c5.377-5.365 7.991-12.456 7.903-19.6-.036-2.927.826-5.801 2.345-8.306 6.188-10.206 9.37-17.691 2.183-24.862-7.186-7.172-14.69-3.997-24.916 2.179-2.51 1.515-5.39 2.375-8.323 2.34-7.16-.089-14.264 2.52-19.643 7.887l40.451 40.362z" transform="translate(2.384 3)"/>
+        <path fill="#FBE190" d="M62.206 104.39c-5.88 5.868-19.7 1.587-30.87-9.56-11.171-11.145-15.46-24.936-9.58-30.802 5.877-5.867 19.7-1.587 30.87 9.56 11.17 11.146 15.458 24.937 9.58 30.802z" transform="translate(2.384 3)"/>
+        <path fill="#FFA746" d="M38.715 76.062c0 2.7-2.193 4.888-4.899 4.888s-4.899-2.188-4.899-4.888c0-2.7 2.193-4.888 4.899-4.888s4.899 2.188 4.899 4.888z" transform="translate(2.384 3)"/>
+        <path d="M46.592 68.412L38.001 73.556" transform="translate(2.384 3)"/>
+    </g>
+</svg>
