@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
-import { BodyText } from '/atoms';
+import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
+import { BodyText } from "/atoms";
 
 const Footer = ({ footer }) => {
   return (
@@ -8,7 +8,11 @@ const Footer = ({ footer }) => {
       <StyledList>
         {Object.entries(footer).map(([key, value]) => (
           <StyledListItem key={key}>
-            <StyledBodyText size="tiny"><a href={value} target="_blank" rel="noopener noreferrer">{key}</a></StyledBodyText>
+            <StyledBodyText size="tiny">
+              <a href={value} target="_blank" rel="noopener noreferrer">
+                {key}
+              </a>
+            </StyledBodyText>
           </StyledListItem>
         ))}
       </StyledList>
@@ -17,7 +21,7 @@ const Footer = ({ footer }) => {
 };
 
 Footer.propTypes = {
-  footer: PropTypes.object.isRequired
+  footer: PropTypes.object.isRequired,
 };
 
 const COMMON_FLEX = css`
@@ -28,14 +32,14 @@ const COMMON_FLEX = css`
 
 const StyledFooter = styled.nav`
   width: 100%;
-  min-height: ${p => p.theme.footerHeight.default};
-  padding: ${p => p.theme.padding.medium} 0;
-  background-color: ${p => p.theme.colors.black};
+  min-height: ${(p) => p.theme.footerHeight.default};
+  padding: ${(p) => p.theme.padding.medium} 0;
+  background-color: ${(p) => p.theme.colors.black};
   ${COMMON_FLEX}
-  @media(${p => p.theme.mediaQueries.desktop}) {
+  @media(${(p) => p.theme.mediaQueries.desktop}) {
     padding: 0;
   }
-  ${p => {
+  ${(p) => {
     if (p.isMobile && p.positionFooter) {
       return `
         display: none !important;
@@ -54,11 +58,11 @@ const StyledList = styled.ul`
 `;
 
 const StyledListItem = styled.li`
-  padding: ${p => p.theme.padding.extraSmall} ${p => p.theme.padding.space};
+  padding: ${(p) => p.theme.padding.extraSmall} ${(p) => p.theme.padding.space};
 `;
 
 const StyledBodyText = styled(BodyText)`
-  color: ${p => p.theme.colors.white};
+  color: ${(p) => p.theme.colors.white};
 `;
 
 export default Footer;

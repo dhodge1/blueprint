@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "TARGET_ENV=qa next dev",
     "build": "TARGET_ENV=prod next build",
-    "start": "TARGET_ENV=prod next start"
+    "start": "TARGET_ENV=prod next start",
+    "format": "prettier \"src/**/*.{js,html}\" --write"
   },
   "dependencies": {
     "next": "9.5.3",
@@ -19,6 +20,7 @@
     "babel-plugin-styled-components": "^1.11.1",
     "directory-named-webpack-plugin": "^4.0.1",
     "lodash": "^4.17.20",
+    "prettier": "^2.1.1",
     "prop-types": "^15.7.2",
     "react-query-devtools": "^2.4.5"
   }

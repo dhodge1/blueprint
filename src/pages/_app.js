@@ -1,8 +1,8 @@
-import '/styles/globals.css';
-import { ReactQueryCacheProvider } from 'react-query'
-import { Hydrate } from 'react-query/hydration'
-import { ReactQueryDevtools } from 'react-query-devtools';
-import { BasePage } from '/templates';
+import "/styles/globals.css";
+import { ReactQueryCacheProvider } from "react-query";
+import { Hydrate } from "react-query/hydration";
+import { ReactQueryDevtools } from "react-query-devtools";
+import { BasePage } from "/templates";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -13,8 +13,8 @@ function MyApp({ Component, pageProps }) {
           <ReactQueryDevtools initialIsOpen={false} />
         </BasePage>
       </Hydrate>
-     </ReactQueryCacheProvider>
+    </ReactQueryCacheProvider>
   );
 }
 
-export default MyApp
+export default MyApp;
