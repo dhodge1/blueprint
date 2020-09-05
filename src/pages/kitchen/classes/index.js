@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
-import { useQuery, makeQueryCache } from 'react-query';
-import { dehydrate } from 'react-query/hydration';
-import { postGraphQLRequest } from '/utils';
-import { GET_LANDING_PAGE } from '/data';
-import config from '/config';
+import { useQuery, makeQueryCache } from "react-query";
+import { dehydrate } from "react-query/hydration";
+import { postGraphQLRequest } from "/utils";
+import { GET_LANDING_PAGE } from "/data";
+import config from "/config";
 
 const {
   classLandingPage,
@@ -14,10 +14,10 @@ const {
 } = config;
 
 // TODO: Add token to query key and pass it to post
-const queryKey = 'getClassLandingPage';
+const queryKey = "getClassLandingPage";
 
 const getClassLandingPage = () => {
-  return postGraphQLRequest(GET_LANDING_PAGE, 'GET_LANDING_PAGE', {
+  return postGraphQLRequest(GET_LANDING_PAGE, "GET_LANDING_PAGE", {
     ...classLandingPage,
   });
 };
@@ -39,7 +39,7 @@ const ClassLandingPage = () => {
     return <span>Error: {error?.message}</span>;
   }
 
-  console.log('data: ', data);
+  console.log("data: ", data);
 
   return <p>test</p>;
 };

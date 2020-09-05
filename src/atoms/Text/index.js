@@ -1,13 +1,13 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 const COMMON_STYLES = css`
-  color: ${(p) => p.theme.colors[p.color] || p.theme.colors.black || 'black'};
-  margin: ${(p) => p.theme.margin[p.margin] || p.theme.margin.none || '0'};
-  padding: ${(p) => p.theme.padding[p.padding] || p.theme.padding.none || '0'};
-  ${(p) => p.block && 'display: block;'}
-  ${(p) => p.uppercase && 'text-transform: uppercase;'}
+  color: ${(p) => p.theme.colors[p.color] || p.theme.colors.black || "black"};
+  margin: ${(p) => p.theme.margin[p.margin] || p.theme.margin.none || "0"};
+  padding: ${(p) => p.theme.padding[p.padding] || p.theme.padding.none || "0"};
+  ${(p) => p.block && "display: block;"}
+  ${(p) => p.uppercase && "text-transform: uppercase;"}
   ${(p) =>
-    p.capitalize && 'text-transform: capitalize;'}
+    p.capitalize && "text-transform: capitalize;"}
 `;
 
 export const Heading = styled.h1`
@@ -25,13 +25,13 @@ export const Heading = styled.h1`
 
   @media (${(p) => p.theme.mediaQueries.desktop}) {
     font-size: ${(p) =>
-    p.theme.fontStyles.sizes[p.desktopSize] ||
+      p.theme.fontStyles.sizes[p.desktopSize] ||
       p.theme.fontStyles.sizes[p.size] ||
       p.theme.fontStyles.sizes.extraLarge};
   }
 `;
 
-Heading.displayName = 'Heading';
+Heading.displayName = "Heading";
 
 export const SubHeading = styled.h2`
   ${COMMON_STYLES}
@@ -55,16 +55,16 @@ export const SubHeading = styled.h2`
 
   @media (${(p) => p.theme.mediaQueries.desktop}) {
     font-size: ${(p) =>
-    p.theme.fontStyles.sizes[p.desktopSize] ||
+      p.theme.fontStyles.sizes[p.desktopSize] ||
       p.theme.fontStyles.sizes[p.size] ||
       p.theme.fontStyles.sizes.large};
     line-height: ${(p) =>
-    p.theme.fontStyles.lineHeight[p.lineHeightDesktop] ||
+      p.theme.fontStyles.lineHeight[p.lineHeightDesktop] ||
       p.theme.fontStyles.lineHeight[p.lineHeight]};
   }
 `;
 
-SubHeading.displayName = 'SubHeading';
+SubHeading.displayName = "SubHeading";
 
 export const SectionHeading = styled.h3`
   ${COMMON_STYLES}
@@ -77,7 +77,7 @@ export const SectionHeading = styled.h3`
   text-transform: uppercase;
 `;
 
-SectionHeading.displayName = 'SectionHeading';
+SectionHeading.displayName = "SectionHeading";
 
 export const SectionSubHeading = styled.h4`
   ${COMMON_STYLES}
@@ -91,7 +91,7 @@ export const SectionSubHeading = styled.h4`
   letter-spacing: "normal";
 `;
 
-SectionSubHeading.displayName = 'SectionSubHeading';
+SectionSubHeading.displayName = "SectionSubHeading";
 
 export const CardHeading = styled.h4`
   ${COMMON_STYLES}
@@ -105,7 +105,7 @@ export const CardHeading = styled.h4`
 
 // this is to prevent linting errors
 // (unexpected vendor-prefix "-webkit"  value-no-vendor-prefix)
-const WEBKIT = '-webkit';
+const WEBKIT = "-webkit";
 
 export const Truncate = styled.div`
   height: ${(p) => p.maxLines}em;
@@ -123,14 +123,14 @@ export const Truncate = styled.div`
   ${WEBKIT}-box-orient: vertical;
 `;
 
-CardHeading.displayName = 'CardHeading';
+CardHeading.displayName = "CardHeading";
 
 export const BodyText = styled.span`
   ${COMMON_STYLES}
   font-family: ${(p) =>
     p.theme.fontStyles.fontFamilies[p.fontFamily] ||
     p.theme.fontStyles.fontFamilies.primary};
-  line-height: ${(p) => p.lineHeight || '1.33'};
+  line-height: ${(p) => p.lineHeight || "1.33"};
   font-weight: ${(p) =>
     p.theme.fontStyles.weights[p.weight] ||
     (p.bold && p.theme.fontStyles.weights.bold) ||
@@ -138,7 +138,7 @@ export const BodyText = styled.span`
   letter-spacing: ${(p) =>
     p.theme.fontStyles.letterSpacing[p.letterSpacing] ||
     (p.bold && p.theme.fontStyles.letterSpacing.medium) ||
-    'normal'};
+    "normal"};
   font-size: ${(p) =>
     p.theme.fontStyles.sizes[p.mobileSize] ||
     p.theme.fontStyles.sizes[p.size] ||
@@ -146,13 +146,13 @@ export const BodyText = styled.span`
 
   @media (${(p) => p.theme.mediaQueries.desktop}) {
     font-size: ${(p) =>
-    p.theme.fontStyles.sizes[p.desktopSize] ||
+      p.theme.fontStyles.sizes[p.desktopSize] ||
       p.theme.fontStyles.sizes[p.size] ||
       p.theme.fontStyles.sizes.small};
   }
 `;
 
-BodyText.displayName = 'BodyText';
+BodyText.displayName = "BodyText";
 
 export const ButtonText = styled.span`
   ${COMMON_STYLES}
@@ -167,13 +167,13 @@ export const ButtonText = styled.span`
     letter-spacing: ${(p) => p.theme.fontStyles.letterSpacing.large};
     font-weight: ${(p) => p.theme.fontStyles.weights.normal};
     font-size: ${(p) =>
-    p.theme.fontStyles.sizes[p.desktopSize] ||
+      p.theme.fontStyles.sizes[p.desktopSize] ||
       p.theme.fontStyles.sizes[p.size] ||
       p.theme.fontStyles.sizes.small};
   }
 `;
 
-ButtonText.displayName = 'ButtonText';
+ButtonText.displayName = "ButtonText";
 
 export const QuoteText = styled.span`
   ${COMMON_STYLES}
@@ -186,4 +186,4 @@ export const QuoteText = styled.span`
     p.theme.fontStyles.letterSpacing.large};
 `;
 
-QuoteText.displayName = 'QuoteText';
+QuoteText.displayName = "QuoteText";

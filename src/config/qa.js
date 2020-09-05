@@ -1,9 +1,9 @@
-import base from '/config/base';
-import merge from 'lodash/merge';
+import base from "/config/base";
+import merge from "lodash/merge";
 
 let qa = {
   playerUrls: {
-    hostname: 'https://dtc-webplayer-qa.s3.amazonaws.com',
+    hostname: "https://dtc-webplayer-qa.s3.amazonaws.com",
     get videoStylesheet() {
       return `${this.hostname}/player/style.css`;
     },
@@ -13,23 +13,23 @@ let qa = {
   },
   scripts: {
     adobedtm:
-      '//assets.adobedtm.com/e090d2ba2d7e/dd2bd5146431/launch-8e5f32fe27b9-development.min.js',
+      "//assets.adobedtm.com/e090d2ba2d7e/dd2bd5146431/launch-8e5f32fe27b9-development.min.js",
   },
   endpoints: {
     accessToken: {
-      env: '-qa',
+      env: "-qa",
       get uri() {
         return `/kitchen${this.env}/v1/access-token`;
       },
     },
     graphql: {
-      env: '-qa',
+      env: "-qa",
       get uri() {
         return `/kitchen${this.env}/v1/graphql`;
       },
     },
     entitlements: {
-      env: '-qa',
+      env: "-qa",
       get uri() {
         return `/subscriptions${this.env}/v1/entitlements/web`;
       },
@@ -37,18 +37,18 @@ let qa = {
   },
   newRelic: {
     loaderConfig: {
-      accountID: '685766',
-      agentID: '536895170',
-      applicationID: '536895170',
-      licenseKey: '4ec229a14a',
+      accountID: "685766",
+      agentID: "536895170",
+      applicationID: "536895170",
+      licenseKey: "4ec229a14a",
     },
     info: {
-      applicationID: '536895170',
-      licenseKey: '4ec229a14a',
+      applicationID: "536895170",
+      licenseKey: "4ec229a14a",
     },
   },
   ads: {
-    dpfEnvironment: 'staging',
+    dpfEnvironment: "staging",
   },
 };
 
