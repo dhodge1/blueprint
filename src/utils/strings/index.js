@@ -7,3 +7,10 @@ export const titleCase = (str) => {
     })
     .join(" ");
 };
+
+export const replaceAll = (str, before, after) => {
+  const regex = new RegExp(before, "g");
+  return str.replace(regex, after);
+};
+
+export const safeString = (str) => str.trim().toLowerCase();

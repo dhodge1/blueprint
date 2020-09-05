@@ -2,6 +2,7 @@ import { ThemeProvider } from "styled-components";
 import { FNKTheme } from "/styles/themes";
 import GlobalStyle from "/styles/global";
 import { ExternalStyle, Footer, Meta } from "/organisms";
+import { PageProvider } from "/context";
 import config from "/config";
 
 const BasePage = ({ children }) => {
@@ -9,11 +10,13 @@ const BasePage = ({ children }) => {
 
   return (
     <ThemeProvider theme={FNKTheme}>
-      <GlobalStyle />
-      <ExternalStyle />
-      <Meta />
-      {children}
-      <Footer footer={footer} />
+      <PageProvider>
+        <GlobalStyle />
+        <ExternalStyle />
+        <Meta />
+        {children}
+        <Footer footer={footer} />
+      </PageProvider>
     </ThemeProvider>
   );
 };

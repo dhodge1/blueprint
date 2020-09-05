@@ -1,5 +1,5 @@
-import qa from "/config/qa";
-import prod from "/config/prod";
+import qa from "./qa";
+import prod from "./prod";
 import { getCurrentEnvironment } from "/utils/env";
 
 const env = getCurrentEnvironment();

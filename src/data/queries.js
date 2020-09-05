@@ -9,7 +9,7 @@ export const GET_LANDING_PAGE = `
     landingPage(id: $id) {
       blocks {
       ... on TopicsBlock   {
-        title, size, kind, topicAssets
+        __typename, title, size, kind, topicAssets
         topics {
           name, filters
           primaryImage {
@@ -18,7 +18,7 @@ export const GET_LANDING_PAGE = `
         }
       }
       ... on TalentTopicsBlock {
-          title, size, kind, topicAssets
+        __typename, title, size, kind, topicAssets
           topics {
             name, filters
             primaryImage {
@@ -27,22 +27,22 @@ export const GET_LANDING_PAGE = `
           }
         }
       ... on ProgrammableBlock   {
-        title, size, kind, items {
+        __typename, title, size, kind, items {
           ...classFields
         }
       }
       ... on LiveClassesBlock   {
-        title, size, kind, items (count: 7) {
+        __typename, title, size, kind, items (count: 7) {
           ...classFields
         }
       }
       ... on PreviouslyLiveBlock {
-        title, size, kind, items {
+        __typename, title, size, kind, items {
           ...classFields
         }
       }
       ... on JumpBackInBlock {
-        title, size, kind
+        __typename, title, size, kind
       }
     }
     }
