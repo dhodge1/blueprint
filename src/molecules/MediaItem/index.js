@@ -24,7 +24,12 @@ const MediaItem = ({ index, item, className, responsive = false }) => {
           passHref
         >
           <a>
-            <StyledAvatar size={"medium"} src={src} responsive={responsive} />
+            <StyledAvatar
+              size={"medium"}
+              src={src}
+              responsive={responsive}
+              loading={"lazy"}
+            />
           </a>
         </Link>
       </div>

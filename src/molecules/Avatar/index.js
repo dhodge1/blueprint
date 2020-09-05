@@ -13,7 +13,7 @@ const Avatar = ({ src, size, hasBorder, className }) => {
   };
   return (
     <Wrapper hasBorder={hasBorder} size={size} className={className}>
-      <StyledImage src={imageUrl} onError={handleError} />
+      <StyledImage src={imageUrl} onError={handleError} loading={"lazy"} />
     </Wrapper>
   );
 };

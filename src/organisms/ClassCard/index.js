@@ -31,7 +31,7 @@ const ClassCard = ({ className, classData }) => {
     <Link href="/kitchen/classes/[id]" as={`/kitchen/classes/${slug}`} passHref>
       <Card isEntitled={isEntitled} className={className}>
         {!isEntitled && isPremium && <PremiumTag small />}
-        <StyledImage src={imageUrl} />
+        <StyledImage src={imageUrl} loading={"lazy"} />
         <ClassCardInfo classData={classData} />
       </Card>
     </Link>

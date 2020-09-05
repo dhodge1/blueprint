@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import styled, { css, ThemeContext } from "styled-components";
 import Link from "next/link";
@@ -117,7 +117,7 @@ const LeadClassCard = ({ classData, className, classType, blockTitle }) => {
         {!isEntitled && isPremium && <PremiumTag />}
         {(isAboutToStart || isLiveNow) && <Gradient />}
         {isLiveNow && <ClassLabel isLive />}
-        <CardImage src={cardImage} />
+        <CardImage src={cardImage} loading={"lazy"} />
         <CardContent
           classType={classType}
           hasBanner={!isAboutToStart && !isLiveNow}

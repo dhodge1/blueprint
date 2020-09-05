@@ -168,6 +168,7 @@ const LiveScheduleCard = ({
               withBorderRadius
               src={primaryImage.url}
               withStrip={!isAboutToStart && !isLiveNow}
+              loading={"lazy"}
             />
             {isAboutToStart || isLiveNow ? <Gradient /> : <PremiumStrip />}
             {isLiveNow && (
