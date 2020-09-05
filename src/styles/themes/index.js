@@ -1,1 +1,1 @@
-export * from "./FNKTheme";
+export * from './FNKTheme';

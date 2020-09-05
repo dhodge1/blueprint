@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
-import { BodyText } from "/atoms";
+import PropTypes from 'prop-types';
+import styled, { css } from 'styled-components';
+import { BodyText } from '/atoms';
 
 const Footer = ({ footer }) => {
   return (

@@ -35,8 +35,9 @@ module.exports = {
     "react/prop-types": [
       2,
       {
-        ignore: ["children"],
+        ignore: ["children", "Component", "dehydratedState", "pageProps"],
       },
     ],
+    "react/react-in-jsx-scope": "off",
   },
 };

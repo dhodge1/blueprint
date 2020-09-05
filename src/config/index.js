@@ -1,6 +1,6 @@
-import qa from "/config/qa";
-import prod from "/config/prod";
-import { getCurrentEnvironment } from "/utils/env";
+import qa from '/config/qa';
+import prod from '/config/prod';
+import { getCurrentEnvironment } from '/utils/env';
 
 const env = getCurrentEnvironment();
 

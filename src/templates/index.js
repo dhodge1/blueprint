@@ -1,1 +1,1 @@
-export { default as BasePage } from "/templates/BasePage";
+export { default as BasePage } from '/templates/BasePage';

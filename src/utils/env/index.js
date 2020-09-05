@@ -1,4 +1,4 @@
-import getConfig from "next/config";
+import getConfig from 'next/config';
 
 export const getCurrentEnvironment = (config = getConfig()) => {
   // let env = 'qa';
@@ -9,7 +9,7 @@ export const getCurrentEnvironment = (config = getConfig()) => {
   // }
 
   const env =
-    config?.publicRuntimeConfig?.TARGET_ENV ?? process?.env?.TARGET_ENV ?? "qa";
+    config?.publicRuntimeConfig?.TARGET_ENV ?? process?.env?.TARGET_ENV ?? 'qa';
 
   return env;
 };

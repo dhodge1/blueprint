@@ -6,7 +6,8 @@
     "dev": "TARGET_ENV=qa next dev",
     "build": "TARGET_ENV=prod next build",
     "start": "TARGET_ENV=prod next start",
-    "format": "prettier \"src/**/*.{js,html}\" --write"
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "dependencies": {
     "next": "9.5.3",

@@ -1,4 +1,4 @@
-import { CLASS_FIELDS } from "/data";
+import { CLASS_FIELDS } from '/data';
 
 export const GET_LANDING_PAGE = `
   query GET_LANDING_PAGE(
