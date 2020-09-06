@@ -68,13 +68,12 @@ export async function getStaticProps() {
   return {
     props: {
       dehydratedState: dehydrate(queryCache),
-      now: new Date().toGMTString(),
     },
     revalidate: 1,
   };
 }
 
-const ClassLandingPage = ({ now }) => {
+const ClassLandingPage = () => {
   const { isEntitled } = useContext(UserContext) || { isEntitled: false };
   const { isMobile } = useContext(PageContext) || { isMobile: true };
   const { isError, data, error } = useQuery(queryKey, getClassLandingPage);
@@ -126,7 +125,6 @@ const ClassLandingPage = ({ now }) => {
       </LandingHead>
       <LandingBody>
         <LandingMain isEntitled={isEntitled}>
-          <p>The time is: {now}</p>
           {useableBlocks.map((block) =>
             getComponentFromBlock(block, isEntitled, isMobile)
           )}
