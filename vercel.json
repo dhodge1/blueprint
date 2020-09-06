@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "src": "/kitchen/(.*)",
+      "headers": { "cache-control": "s-maxage=1, stale-while-revalidate" },
+      "dest": "/kitchen/$1"
+    }
+  ]
+}
