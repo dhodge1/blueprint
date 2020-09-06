@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { useContext } from "react";
 import styled, { css } from "styled-components";
@@ -67,17 +68,16 @@ export async function getStaticProps() {
   return {
     props: {
       dehydratedState: dehydrate(queryCache),
+      now: Date.now(),
     },
     revalidate: 1,
   };
 }
 
-const ClassLandingPage = ({ dehydratedState }) => {
+const ClassLandingPage = ({ now }) => {
   const { isEntitled } = useContext(UserContext) || { isEntitled: false };
   const { isMobile } = useContext(PageContext) || { isMobile: true };
   const { isError, data, error } = useQuery(queryKey, getClassLandingPage);
-
-  console.log(dehydratedState);
 
   if (isError) {
     return (
@@ -126,6 +126,7 @@ const ClassLandingPage = ({ dehydratedState }) => {
       </LandingHead>
       <LandingBody>
         <LandingMain isEntitled={isEntitled}>
+          <p>The time is: {now}</p>
           {useableBlocks.map((block) =>
             getComponentFromBlock(block, isEntitled, isMobile)
           )}
