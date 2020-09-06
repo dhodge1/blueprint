@@ -72,10 +72,12 @@ export async function getStaticProps() {
   };
 }
 
-const ClassLandingPage = () => {
+const ClassLandingPage = ({ dehydratedState }) => {
   const { isEntitled } = useContext(UserContext) || { isEntitled: false };
   const { isMobile } = useContext(PageContext) || { isMobile: true };
   const { isError, data, error } = useQuery(queryKey, getClassLandingPage);
+
+  console.log(dehydratedState);
 
   if (isError) {
     return (
