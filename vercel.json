@@ -1,9 +1,13 @@
 {
-  "routes": [
+  "headers": [
     {
-      "src": "/kitchen/(.*)",
-      "headers": { "cache-control": "s-maxage=1, stale-while-revalidate" },
-      "dest": "/kitchen/$1"
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=1, stale-while-revalidate"
+        }
+      ]
     }
   ]
 }
