@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 export async function getStaticProps() {
+  const now = new Date().toGMTString();
   return {
     props: {
-      now: new Date().toGMTString(),
+      now,
     },
     revalidate: 1,
   };
