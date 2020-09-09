@@ -64,3 +64,25 @@ export const formatSeconds = (timeInSeconds) => {
     seconds: result.substr(6, 2),
   };
 };
+
+export const groupClassesByDate = (classes) => {
+  const dateMap = new Map();
+  let dateKey;
+  const date = new Date();
+  const utcOffset = date.getTimezoneOffset();
+  let startTimeWithOffset;
+
+  classes.forEach((liveClass) => {
+    if (liveClass === null) return;
+    startTimeWithOffset = moment(liveClass.startTime)
+      .utcOffset(-utcOffset)
+      .format();
+    dateKey = startTimeWithOffset.split("T")[0];
+    if (!dateMap.has(dateKey)) {
+      dateMap.set(dateKey, []);
+    }
+    dateMap.get(dateKey).push(liveClass);
+  });
+
+  return dateMap;
+};

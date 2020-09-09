@@ -100,3 +100,32 @@ export const GET_TOPIC_RESULTS = `
 
   ${CLASS_FIELDS}
 `;
+
+export const GET_UPCOMING_CLASSES = `
+  query GET_UPCOMING_CLASSES (
+    $days: Int = 14,
+    $imgWidth: Int
+  ) {
+    upcomingClasses(days: $days) {
+      duration
+      id
+      instructors {
+        title
+      }
+      primaryImage {
+        url(transform: { width: $imgWidth })
+      }
+      publishingConfig {
+        web {
+          url,
+          seo {
+            slug
+          }
+        }
+      }
+      startTime
+      tier
+      title
+    }
+  }
+`;

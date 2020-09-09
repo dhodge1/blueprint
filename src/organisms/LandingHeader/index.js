@@ -13,6 +13,7 @@ const LandingHeader = ({
   backRoute = "/kitchen/classes",
   mobileSize = "extraLarge",
   desktopSize = "XXL",
+  date = "",
 }) => {
   return (
     <Wrapper className={className}>
@@ -34,6 +35,7 @@ const LandingHeader = ({
           >
             {pageType}
           </Heading>
+          <DateText>{date}</DateText>
         </TitleBlock>
         {hasLogo && (
           <PremiumLogo>
@@ -69,6 +71,7 @@ LandingHeader.propTypes = {
   backRoute: PropTypes.string,
   mobileSize: PropTypes.oneOf(fontSizes),
   desktopSize: PropTypes.oneOf(fontSizes),
+  date: PropTypes.string,
 };
 
 const Wrapper = styled.div`
@@ -181,6 +184,11 @@ const TitleBlock = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+`;
+
+const DateText = styled(BodyText)`
+  margin-bottom: calc(${(p) => p.theme.margin.small} * 2);
+  margin-left: 2.5px;
 `;
 
 export default LandingHeader;
