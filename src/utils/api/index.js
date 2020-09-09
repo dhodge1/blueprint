@@ -4,7 +4,12 @@ const { baseUrl } = config?.endpoints;
 const { uri } = config?.endpoints?.graphql;
 const endpoint = `${baseUrl()}${uri}`;
 
-export const postGraphQLRequest = (query, operationName, variables = {}) => {
+export const postGraphQLRequest = (
+  query,
+  operationName,
+  variables = {},
+  setEntitlement = () => {}
+) => {
   return fetch(endpoint, {
     method: "POST",
     headers: {
@@ -20,7 +25,15 @@ export const postGraphQLRequest = (query, operationName, variables = {}) => {
       operationName,
     }),
   })
-    .then((response) => response.json())
+    .then((response) => {
+      const { headers } = response;
+      const xEntitlement = headers.get("x-entitlement");
+      const isEntitled =
+        ["food-network-plus", "food-network-kitchen"].indexOf(xEntitlement) >
+        -1;
+      setEntitlement(isEntitled);
+      return response.json();
+    })
     .then((response) => response.data)
     .catch((error) => {
       console.error(error);
