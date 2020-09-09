@@ -1,5 +1,6 @@
 export { default as Avatar } from "./Avatar";
 export { default as ClassCardInfo } from "./ClassCardInfo";
+export { default as LoadingSpinner } from "./LoadingSpinner";
 export { default as MediaItem } from "./MediaItem";
 export { default as PercentLikes } from "./PercentLikes";
 export { default as PremiumTag } from "./PremiumTag";
