@@ -2,10 +2,9 @@ export async function getStaticProps() {
   const now = new Date().toGMTString();
   return {
     props: {
-      dehydratedState: dehydrate(queryCache),
-      now,
+      now
     },
-    revalidate: 1,
+    revalidate: 1
   };
 }
 
